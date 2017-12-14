@@ -1,8 +1,28 @@
-﻿
+﻿@using CarStore.Models
+@model IEnumerable<CarStore.Models.CARSINFO>
+
 @{
     ViewBag.Title = "Index";
+   
 }
 
-<h2>The best site car</h2>
-<h3>19P1_26 2018 september</h3>
-<h4>Nickita))))))))</h4>
+
+<center>
+    <h2>Cars</h2>
+    <br />
+    <div>
+       @foreach (var s in Model)
+       {
+        <div class="card" style="width: 20rem;">
+            <div class="card-body">
+                <img src="@s.CarImage" width="150" height="150" />
+                <h4 class="card-title">Категория: @s.Category</h4>
+                <h4 class="card-title">Имя: @s.CarName</h4>
+                <h4 class="card-title">Возраст: @s.Age</h4>
+                <h4 class="card-title">Цена: @s.Price</h4>
+                <h4 class="card-title">Цвет: @s.Color</h4>
+            </div>
+        </div>
+       }
+    </div>
+</center>
