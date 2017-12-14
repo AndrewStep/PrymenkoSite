@@ -122,6 +122,11 @@
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\911.png" />
+    <Content Include="Images\e_class.png" />
+    <Content Include="Images\Aventador.png" />
+    <Content Include="Images\R8.png" />
+    <Content Include="Images\X6.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
